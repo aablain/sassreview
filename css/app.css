@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  overflow: hidden; }
+
+.pics {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .pics:last-child {
+    margin-right: 0; }
+  .pics .pictures {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%; }
+    .pics .pictures:last-child {
+      margin-right: 0; }
+    .pics .pictures .content {
+      border: 1px dotted black;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 0px;
+      position: relative;
+      height: 400px;
+      background-image: url("../img/cat.jpg");
+      background-image: url("../img/cat.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .pics .pictures .content:last-child {
+        margin-right: 0; }
+      .pics .pictures .content .text, .pics .pictures .content .picbox {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: none; }
+        .pics .pictures .content .text:last-child, .pics .pictures .content .picbox:last-child {
+          margin-right: 0; }
+      .pics .pictures .content .picbox {
+        margin-top: 25px;
+        background-image: url("../img/cat.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 266.66667px; }
+      @media (max-width: 1000px) {
+        .pics .pictures .content {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 0px; }
+          .pics .pictures .content:last-child {
+            margin-right: 0; } }
+      @media (max-width: 700px) {
+        .pics .pictures .content {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-right: 0px; }
+          .pics .pictures .content:last-child {
+            margin-right: 0; } }
+
+/*# sourceMappingURL=app.css.map */

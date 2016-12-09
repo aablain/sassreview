@@ -1,0 +1,24 @@
+body {
+  overflow: hidden;
+}
+
+.pics {
+  @include span-columns(12 of 12);
+  .pictures {
+    @include span-columns(11 of 12);
+    .content {
+      border: 1px dotted black;
+      @include span-columns(4 of 12);
+      margin-right: 0px;
+      @include content(400px, cat);
+      @media #{$br-medium} {
+        @include span-columns(6 of 12);
+        margin-right: 0px;
+      }
+      @media #{$br-small} {
+        @include span-columns(12 of 12);
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+@mixin content($height, $img) {
+  position: relative;
+  height: $height;
+  // background-image: url('../img/#{$img}.jpg');
+  @include background-image(url('../img/#{$img}.jpg'));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .text, .picbox {
+    @include span-columns(6 of 12);
+    margin-right: none;
+  }
+  .picbox {
+    margin-top: 25px;
+    background-image: url('../img/#{$img}.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $height / 1.5;
+  }
+}
+
+// @mixin content($height) {
+//   height: $height;
+//   .text, .picbox {
+//     @include span-columns(6 of 12);
+//     margin-right: none;
+//   }
+// }
