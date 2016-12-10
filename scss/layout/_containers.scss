@@ -1,19 +1,23 @@
 body {
-  overflow: hidden;
+  overflow: auto;
 }
 
 .pics {
   @include span-columns(12 of 12);
   .pictures {
     @include span-columns(11 of 12);
+    display: block;
+    margin: auto;
     .content {
       border: 1px dotted black;
       @include span-columns(4 of 12);
       margin-right: 0px;
-      @include content(400px, cat);
+      margin-right: 1%;
+      margin-bottom: 10px;
+      @include content(400px, cat, orange);
       @media #{$br-medium} {
         @include span-columns(6 of 12);
-        margin-right: 0px;
+        margin-right: 1%;
       }
       @media #{$br-small} {
         @include span-columns(12 of 12);
