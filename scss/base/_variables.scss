@@ -3,4 +3,9 @@
 $br-medium   : '(max-width: 1000px)';
 $br-small    : '(max-width: 700px)';
 
-// Image Path
+// Background extend
+%background {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
